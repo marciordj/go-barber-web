@@ -1,4 +1,5 @@
 import { BehindBackground, Container, Content } from './styles';
+import { FiLogIn } from 'react-icons/fi';
 
 import logoGobarber from '../../assets/Logo.svg';
 
@@ -19,7 +20,10 @@ const Login = () => {
           <a href="forgt">Esqueci minha senha</a>
         </form>
 
-        <a href="forgt">Criar conta</a>
+        <a href="forgt">
+          <FiLogIn />
+          Criar conta
+        </a>
       </Content>
       <BehindBackground />
     </Container>
