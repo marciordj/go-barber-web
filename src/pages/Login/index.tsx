@@ -1,7 +1,9 @@
-import { BehindBackground, Container, Content } from './styles';
-import { FiLogIn } from 'react-icons/fi';
+import { BackgroundSide, Container, Content } from './styles';
+import { FiLogIn, FiMail, FiLock } from 'react-icons/fi';
 
 import logoGobarber from '../../assets/Logo.svg';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
 
 const Login = () => {
   return (
@@ -12,10 +14,15 @@ const Login = () => {
         <form>
           <h1>Faça seu Logon</h1>
 
-          <input placeholder="E-mail" />
-          <input type="password" placeholder="Senha" />
+          <Input name="email" icon={FiMail} placeholder="E-mail" />
+          <Input
+            name="Password"
+            icon={FiLock}
+            type="password"
+            placeholder="Password"
+          />
 
-          <button type="submit">Entrar</button>
+          <Button type="submit">Entrar</Button>
 
           <a href="forgt">Esqueci minha senha</a>
         </form>
@@ -25,7 +32,7 @@ const Login = () => {
           Criar conta
         </a>
       </Content>
-      <BehindBackground />
+      <BackgroundSide />
     </Container>
   );
 };

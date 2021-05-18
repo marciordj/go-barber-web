@@ -27,20 +27,6 @@ export const Content = styled.div`
       margin-bottom: 24px;
     }
 
-    input {
-      background: #232129;
-      border-radius: 10px;
-      border: 2px solid #232129;
-      width: 100%;
-      height: 56px;
-      padding: 16px;
-      color: #f4ede8;
-
-      & + input {
-        margin-top: 8px;
-      }
-    }
-
     button {
       background: #ff9000;
       color: #312e38;
@@ -90,7 +76,7 @@ export const Content = styled.div`
   }
 `;
 
-export const BehindBackground = styled.div`
+export const BackgroundSide = styled.div`
   flex: 1;
   background: url(${logInBackground}) no-repeat center;
   background-size: cover;
