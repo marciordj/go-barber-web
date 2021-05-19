@@ -27,19 +27,20 @@
         "extensions": [".tsx"]
       }
     ],
+    "max-lines": ["error", 450],
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
     "react/react-in-jsx-scope": "off",
    "prettier/prettier": "error",
    "max-len": [
-     "warn",
-     120,
-     2,
-     {
-       "ignorePattern": "^(import/export)",
-       "ignoreUrls": true
-     }
-   ],
+    "warn",
+    120,
+    2,
+    {
+      "ignorePattern": "^(import/export)",
+      "ignoreUrls": true
+    }
+  ],
    "@typescript-eslint/explicit-module-boundary-types": "off"
   },
   "settings": {
