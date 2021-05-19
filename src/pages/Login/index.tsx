@@ -9,25 +9,20 @@ const Login = () => {
   return (
     <Container>
       <Content>
-        <img src={logoGobarber} alt="GoBarber" />
+        <img src={logoGobarber} alt='GoBarber' />
 
         <form>
           <h1>Faça seu Logon</h1>
 
-          <Input name="email" icon={FiMail} placeholder="E-mail" />
-          <Input
-            name="Password"
-            icon={FiLock}
-            type="password"
-            placeholder="Password"
-          />
+          <Input name='email' icon={FiMail} placeholder='E-mail' />
+          <Input name='Password' icon={FiLock} type='password' placeholder='Password' />
 
-          <Button type="submit">Entrar</Button>
+          <Button type='submit'>Entrar</Button>
 
-          <a href="forgt">Esqueci minha senha</a>
+          <a href='forgt'>Esqueci minha senha</a>
         </form>
 
-        <a href="forgt">
+        <a href='forgt'>
           <FiLogIn />
           Criar conta
         </a>

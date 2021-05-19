@@ -6,7 +6,7 @@ type IProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button = ({ children, ...rest }: IProps) => {
   return (
-    <Container type="button" {...rest}>
+    <Container type='button' {...rest}>
       {children}
     </Container>
   );
